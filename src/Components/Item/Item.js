@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-const Item = ({item}) => {
+const Item = ({data}) => {
     return (
-        <Link to={"/item/" + item.id} className="text-decoration-none" >
+        <Link to={"/item/" + data.id} className="text-decoration-none" >
             <div className="container">
                 <div className="card border-0 row cardM">
-                    <img src={item.imagen} className="card-img-top" alt={item.nombre} />
+                    <img src={data.img} className="card-img-top" alt={data.title} />
                     <div className="card-body text-center">
-                        <p className="card-text ">{item.nombre} </p>
+                        <p className="card-text ">{data.title} </p>
                     </div>
                 </div>
             </div>
