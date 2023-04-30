@@ -1,3 +1,7 @@
+*{
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -49,6 +53,10 @@
   padding-left: 0px;
 }
 
+.titulo-menu{
+  overflow: hidden;
+}
+
 .menu li {
   list-style: none;
   padding: 15px;
@@ -97,7 +105,8 @@
   display: flex;
   background: url(../src/Components/img/fondo2.jpg);
   margin-bottom: 0;
-  height: 83vh ;
+  height: 100% ;
+  min-height: 82.5vh;
   align-items: center;
   justify-content: center;
 }
@@ -116,10 +125,53 @@
   max-width:150px ;
   min-height:237px ;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-top:20px !important;
   background-color: #0d2033 !important;
 }
 
 .cardM p{
   color: #fff;
+}
+
+.cont-btn{
+  background-color: #000c18;
+  color: #fff;
+  border-radius: 20%;
+  margin: 5px;
+}
+
+.add-cart{
+  background-color: #000c18;
+  color: #fff;
+  border-radius: 5%;
+  margin: 5px;
+}
+
+.vi{
+  text-decoration: none;
+  color: red;
+}
+
+.cart-list{
+  padding-top: 20px;
+  /* width: 400px; */
+  background-color: #0d2033;
+  margin-top: 25px;
+}
+
+.item{
+  padding-top: 20px;
+}
+
+.item h1{
+  overflow: hidden;
+}
+
+.item h2{
+  overflow: hidden;
+}
+
+.f-card{
+  background-color: #0d2033;
 }
